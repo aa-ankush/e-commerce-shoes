@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | Shoelpv</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <script defer src="cart.js"></script>
+  </head>
+  <body class="bg-light">
+    <!-- Top Announcement Banner -->
+    <div id="announcement-banner" class="bg-black text-white py-2 position-relative">
+      <div class="container d-flex justify-content-center align-items-center text-sm" style="font-size: 0.85rem;">
+        <span>Free Shipping on Orders Over ₹5000 <i class="bi bi-truck ms-1"></i></span>
+      </div>
+      <button id="close-banner" class="btn text-white position-absolute end-0 top-50 translate-middle-y me-2 p-0 border-0" aria-label="Close"><i class="bi bi-x fs-5"></i></button>
+    </div>
+
+    <!-- Dynamic Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <main class="container py-4 mt-2">
+       <h2 class="fw-bold mb-4">Your Shopping Cart</h2>
+       <div class="row g-4">
+           <div class="col-12 col-lg-8" id="cart-items-container">
+               <!-- Cart items injected here -->
+           </div>
+           <div class="col-12 col-lg-4">
+               <div class="bg-white p-4 rounded-0 border">
+                   <h5 class="fw-bold mb-4 pb-2 border-bottom">Order Summary</h5>
+                   <div class="d-flex justify-content-between mb-2">
+                       <span class="text-muted">Subtotal</span>
+                       <span class="fw-bold fs-5" id="cart-total">₹0</span>
+                   </div>
+                   <div class="d-flex justify-content-between mb-4 border-bottom pb-4">
+                       <span class="text-muted">Estimated Tax</span>
+                       <span class="fw-bold">₹0</span>
+                   </div>
+                   <button class="btn btn-dark w-100 py-3 fw-bold bg-black rounded-0 mb-3" style="letter-spacing: 0.5px;" onclick="window.location.href='checkout.html'">PROCEED TO CHECKOUT</button>
+                   <a href="index.html" class="btn btn-outline-dark w-100 py-2 rounded-0">CONTINUE SHOPPING</a>
+               </div>
+           </div>
+       </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

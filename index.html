@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoelpv - Comfort & Style</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+
+    <!-- Top Announcement Banner -->
+    <div id="announcement-banner" class="bg-black text-white py-2 position-relative">
+      <div class="container d-flex justify-content-center align-items-center text-sm" style="font-size: 0.85rem;">
+        <span>Subscribe to our Newsletter For Latest Collections <i class="bi bi-arrow-up-right ms-1"></i></span>
+      </div>
+      <button id="close-banner" class="btn text-white position-absolute end-0 top-50 translate-middle-y me-2 p-0 border-0" aria-label="Close">
+        <i class="bi bi-x fs-5"></i>
+      </button>
+    </div>
+
+    <!-- Dynamic Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section Content -->
+    <main class="mt-4 pt-5 text-center">
+      <h1 class="display-1 fw-bold hero-title mb-4 px-3">COMFORT & STYLE</h1>
+      <div class="w-100">
+        <img src="Gemini_Generated_Image_ohqgloohqgloohqg.png" alt="Stylish young man with a skateboard" class="img-fluid w-100 mb-5" style="max-height: 75vh; object-fit: cover; object-position: center;">
+      </div>
+    </main>
+
+    <!-- New Collection Section -->
+    <section class="container-fluid px-2 px-md-4 px-lg-5 py-5 mt-4 position-relative" style="overflow-x: hidden;">
+      <div class="d-flex justify-content-between align-items-center mb-4 px-2">
+        <h2 class="fw-bold mb-0" style="font-size: clamp(1.8rem, 6vw, 2.5rem); letter-spacing: -1px;">See Our New Collection</h2>
+        <!-- Custom JS Scroll Buttons -->
+        <!-- <div class="d-none d-md-flex gap-2">
+          <button id="scroll-left" class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;" aria-label="Scroll left"><i class="bi bi-chevron-left"></i></button>
+          <button id="scroll-right" class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;" aria-label="Scroll right"><i class="bi bi-chevron-right"></i></button>
+        </div> -->
+      </div>
+      
+      <div class="scroll-container pb-4" id="product-container">
+        <!-- Card 1 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">01</span>
+            <span class="card-category">Casual Shoes</span>
+          </div>
+          <img src="shoe_1.png" alt="Casual Shoe" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">02</span>
+            <span class="card-category">Formal Shoes</span>
+          </div>
+          <img src="shoe_2.png" alt="Formal Shoe" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">03</span>
+            <span class="card-category">Sneakers</span>
+          </div>
+          <img src="shoe_1.png" alt="Sneaker" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">04</span>
+            <span class="card-category">Running Shoes</span>
+          </div>
+          <img src="shoe_2.png" alt="Running Shoe" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">05</span>
+            <span class="card-category">Casual Shoes</span>
+          </div>
+          <img src="shoe_1.png" alt="Casual Shoe" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+        
+        <!-- Card 6 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">06</span>
+            <span class="card-category">Formal Shoes</span>
+          </div>
+          <img src="shoe_2.png" alt="Formal Shoe" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+        
+        <!-- Card 7 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">07</span>
+            <span class="card-category">Sneakers</span>
+          </div>
+          <img src="shoe_1.png" alt="Sneaker" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+        
+        <!-- Card 8 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">08</span>
+            <span class="card-category">Running Shoes</span>
+          </div>
+          <img src="shoe_2.png" alt="Running Shoe" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+        
+        <!-- Card 9 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">09</span>
+            <span class="card-category">Casual Shoes</span>
+          </div>
+          <img src="shoe_1.png" alt="Casual Shoe" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+        
+        <!-- Card 10 -->
+        <div class="product-card">
+          <div class="card-top">
+            <span class="card-number">10</span>
+            <span class="card-category">Special Edition</span>
+          </div>
+          <img src="shoe_2.png" alt="Special Edition Shoe" class="product-image">
+          <div class="product-price text-center fw-bold mb-3 fs-5">$129.00</div>
+          <button class="btn-add-to-cart">Add To Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Featured Collection (Dual Setup) -->
+    <section class="container-fluid px-2 px-md-4 px-lg-5 py-5 mt-3 position-relative">
+      <div class="text-center mb-5 pb-2">
+         <h2 class="fw-bold mb-0 text-dark" style="font-size: clamp(2rem, 5vw, 2.8rem); letter-spacing: -0.5px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">The Featured Collection</h2>
+      </div>
+      <div class="row g-4 px-2">
+         <!-- Women's Card -->
+         <div class="col-12 col-md-6 pb-2">
+            <!-- Using hover-scale CSS trick to make the img scale up on hover seamlessly -->
+            <div class="position-relative overflow-hidden rounded-4 shadow-sm featured-hover-card" style="min-height: 550px; cursor: pointer;" onclick="window.location.href='womens.html'">
+               <img src="womens_trendy_sneakers.png" alt="Women's Trendy Sneakers" class="w-100 h-100 position-absolute featured-hover-img" style="object-fit: cover; top: 0; left: 0; transition: transform 0.4s ease;">
+               <!-- Gradient Overlay -->
+               <div class="position-absolute w-100 h-100 top-0 start-0" style="background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 40%); pointer-events: none;"></div>
+               <!-- Content Overlay -->
+               <div class="position-absolute bottom-0 start-0 w-100 p-4 p-md-5 text-white" style="pointer-events: none;">
+                  <h3 class="fw-bold mb-1" style="font-size: 1.6rem; letter-spacing: -0.2px;">Women's Trendy Sneakers</h3>
+                  <p class="mb-4" style="font-size: 0.85rem; opacity: 0.9; max-width: 80%; font-weight: 300;">Perfect for making a bold statement at work,<br>events.</p>
+                  <button class="btn btn-light px-4 py-2" style="font-size: 0.75rem; font-weight: 500; border-radius: 4px; pointer-events: auto;">Explore</button>
+               </div>
+            </div>
+         </div>
+         <!-- Men's Card -->
+         <div class="col-12 col-md-6 pb-2">
+            <div class="position-relative overflow-hidden rounded-4 shadow-sm featured-hover-card" style="min-height: 550px; cursor: pointer;" onclick="window.location.href='mens.html'">
+               <img src="mens_classic_loafers.png" alt="Men's Classic Leather Loafers" class="w-100 h-100 position-absolute featured-hover-img" style="object-fit: cover; top: 0; left: 0; transition: transform 0.4s ease;">
+               <!-- Gradient Overlay -->
+               <div class="position-absolute w-100 h-100 top-0 start-0" style="background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 40%); pointer-events: none;"></div>
+               <!-- Content Overlay -->
+               <div class="position-absolute bottom-0 start-0 w-100 p-4 p-md-5 text-white" style="pointer-events: none;">
+                  <h3 class="fw-bold mb-1" style="font-size: 1.6rem; letter-spacing: -0.2px;">Men's Classic Leather Loafers</h3>
+                  <p class="mb-4" style="font-size: 0.85rem; opacity: 0.9; max-width: 80%; font-weight: 300;">Perfect for making a bold statement at work,<br>events.</p>
+                  <button class="btn btn-light px-4 py-2" style="font-size: 0.75rem; font-weight: 500; border-radius: 4px; pointer-events: auto;">Explore</button>
+               </div>
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="container-fluid px-2 px-md-4 px-lg-5 py-5 mt-4 position-relative best-sellers-section" style="overflow-x: hidden;">
+      <div class="d-flex justify-content-between align-items-center mb-4 px-2">
+         <h2 class="fw-bold mb-0" style="font-size: clamp(1.8rem, 6vw, 2.5rem); letter-spacing: -1px;">Best Sellers</h2>
+         <div class="d-flex gap-2">
+            <button class="btn btn-light rounded-circle shadow-sm border p-2 lh-1" id="bs-prev"><i class="bi bi-chevron-left" style="font-size: 1.2rem; color: #aaa;"></i></button>
+            <button class="btn btn-dark rounded-circle shadow-sm p-2 lh-1" id="bs-next"><i class="bi bi-chevron-right text-white" style="font-size: 1.2rem;"></i></button>
+         </div>
+      </div>
+
+      <div class="row g-4 px-2">
+         <!-- Left: 4 items (2x2 grid) -->
+         <div class="col-12 col-lg-7">
+            <div class="row g-4 h-100" id="best-sellers-grid">
+               <!-- Dynamic small items injected here -->
+            </div>
+         </div>
+         <!-- Right: 1 large featured item -->
+         <div class="col-12 col-lg-5" id="best-sellers-featured">
+            <!-- Dynamic massive item injected here -->
+         </div>
+      </div>
+    </section>
+
+    <!-- Shop By Style Section (Staggered Carousel) -->
+    <section class="container-fluid px-2 px-md-4 py-5 mt-5 text-center">
+      <h2 class="fw-bold mb-5" style="font-size: clamp(2rem, 5vw, 2.8rem); letter-spacing: -1px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Shop By Style</h2>
+      
+      <!-- Flex container with align-items-center to create the staggered height effect -->
+      <div class="d-flex justify-content-center align-items-center gap-3 gap-md-4 overflow-x-auto pb-4 px-3" style="min-height: 480px; scrollbar-width: none;">
+         <!-- Card 1 -->
+         <div class="d-flex flex-column align-items-center flex-shrink-0" style="width: 220px;">
+            <div class="w-100 rounded-4 d-flex justify-content-center align-items-center p-3 shadow-sm hover-elevate" style="background-color: #f2f3f5; height: 260px; transition: transform 0.3s ease; cursor: pointer;">
+               <img src="shoe_1.png" class="img-fluid" style="mix-blend-mode: darken; max-height: 140px;">
+            </div>
+            <div class="mt-4 fs-5" style="font-family: 'Times New Roman', Times, serif; color: #555; font-weight: 300; letter-spacing: 0.5px;">Athletic</div>
+         </div>
+         <!-- Card 2 -->
+         <div class="d-flex flex-column align-items-center flex-shrink-0" style="width: 250px;">
+            <div class="w-100 rounded-4 d-flex justify-content-center align-items-center p-4 shadow-sm hover-elevate" style="background-color: #f2f3f5; height: 340px; transition: transform 0.3s ease; cursor: pointer;">
+               <img src="shoe_2.png" class="img-fluid" style="mix-blend-mode: darken; max-height: 180px;">
+            </div>
+            <div class="mt-4 fs-5" style="font-family: 'Times New Roman', Times, serif; color: #555; font-weight: 300; letter-spacing: 0.5px;">Minimalist</div>
+         </div>
+         <!-- Card 3 (Center - Tallest) -->
+         <div class="d-flex flex-column align-items-center flex-shrink-0" style="width: 280px;">
+            <div class="w-100 rounded-4 d-flex justify-content-center align-items-center p-4 shadow-sm hover-elevate" style="background-color: #f2f3f5; height: 440px; transition: transform 0.3s ease; cursor: pointer;">
+               <img src="shoe_1.png" class="img-fluid" style="mix-blend-mode: darken; max-height: 240px;">
+            </div>
+            <div class="mt-4 fs-4 text-dark" style="font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">Classic</div>
+         </div>
+         <!-- Card 4 -->
+         <div class="d-flex flex-column align-items-center flex-shrink-0" style="width: 250px;">
+            <div class="w-100 rounded-4 d-flex justify-content-center align-items-center p-4 shadow-sm hover-elevate" style="background-color: #f2f3f5; height: 340px; transition: transform 0.3s ease; cursor: pointer;">
+               <img src="shoe_2.png" class="img-fluid" style="mix-blend-mode: darken; max-height: 180px; transform: scaleX(-1);">
+            </div>
+            <div class="mt-4 fs-5" style="font-family: 'Times New Roman', Times, serif; color: #555; font-weight: 300; letter-spacing: 0.5px;">Modern</div>
+         </div>
+         <!-- Card 5 -->
+         <div class="d-flex flex-column align-items-center flex-shrink-0" style="width: 220px;">
+            <div class="w-100 rounded-4 d-flex justify-content-center align-items-center p-3 shadow-sm hover-elevate" style="background-color: #f2f3f5; height: 260px; transition: transform 0.3s ease; cursor: pointer;">
+               <img src="shoe_1.png" class="img-fluid" style="mix-blend-mode: darken; max-height: 140px; transform: scaleX(-1);">
+            </div>
+            <div class="mt-4 fs-5" style="font-family: 'Times New Roman', Times, serif; color: #555; font-weight: 300; letter-spacing: 0.5px;">Streetwear</div>
+         </div>
+      </div>
+
+      <div class="mt-5 mb-3">
+         <button class="btn btn-outline-dark rounded-pill px-4 py-2 d-inline-flex align-items-center gap-3 text-uppercase" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 1px;">
+            SHOP COLLECTION <i class="bi bi-arrow-up-right-circle-fill fs-5 lh-1 text-dark"></i>
+         </button>
+      </div>
+    </section>
+
+    <!-- Designed With You In Mind Section -->
+    <section class="container-fluid px-2 px-md-4 px-lg-5 py-5 mb-5 mt-3">
+      <div class="text-white rounded-5 p-4 p-md-5 position-relative" style="background-color: #222224; overflow: hidden;">
+         
+         <!-- Header -->
+         <div class="row align-items-center mb-5 mt-2 px-md-3">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+               <h2 class="fw-bold mb-0 lh-sm" style="font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: 0px;">DESIGNED WITH YOU<br>IN MIND</h2>
+            </div>
+            <div class="col-12 col-lg-5 offset-lg-1">
+               <p class="mb-0" style="font-size: 1rem; color: #a0a0a0; line-height: 1.6;">
+                 Our comprehensive features make managing expenses a breeze. From insightful analytics to secure storage, explore how each tool.
+               </p>
+            </div>
+         </div>
+
+         <!-- Inner Media Container -->
+         <div class="position-relative w-100 rounded-5 overflow-hidden mx-auto" style="min-height: 65vh; background-color: #d8dde3;">
+            <img src="Gemini_Generated_Image_ohqgloohqgloohqg.png" alt="Featured collection" class="w-100 h-100 position-absolute" style="object-fit: cover; top: 0; left: 0;">
+            
+            <!-- Shop Collection Button Cutout -->
+            <div class="position-absolute d-none d-md-block" style="top: 0; right: 0; background-color: #222224; border-bottom-left-radius: 40px; padding: 25px 0px 25px 40px; z-index: 10;">
+               <a href="index.html" class="btn rounded-pill d-flex align-items-center gap-3 text-white text-uppercase" style="border: 1px solid rgba(255,255,255,0.4); padding: 8px 12px 8px 20px; font-size: 0.8rem; letter-spacing: 1px; text-decoration: none;">
+                 SHOP COLLECTION 
+                 <span class="bg-white text-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;"><i class="bi bi-arrow-up-right fw-bold"></i></span>
+               </a>
+            </div>
+
+            <!-- Play Button Overlay -->
+            <div class="position-absolute top-50 start-50 translate-middle z-index-10">
+               <i class="bi bi-play-fill text-dark" style="font-size: 3rem; opacity: 0.9; filter: drop-shadow(0 0 10px rgba(255,255,255,0.5)); cursor: pointer;"></i>
+            </div>
+
+            <!-- Glassmorphism Marquee -->
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 p-md-4" style="z-index: 10;">
+               <div class="rounded-pill p-3 px-4 d-flex align-items-center" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.2); overflow: hidden; white-space: nowrap;">
+                  <div class="marquee-content d-inline-block text-dark fs-4" style="font-family: Georgia, serif; letter-spacing: 1px;">
+                     Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp; Styleo &nbsp;&nbsp;✦&nbsp;&nbsp;
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </div>
+    </section>
+
+    <!-- Brand Manifesto Text Block -->
+    <section class="container py-5 my-0 my-md-5 text-center">
+      <div class="row justify-content-center">
+         <div class="col-12 col-md-10 col-lg-8">
+            <h3 class="fw-normal text-dark lh-base" style="font-size: clamp(1.4rem, 4vw, 2.2rem); letter-spacing: -0.5px;">
+              Elevate your daily stride
+              <img src="shoe_1.png" alt="Premium leather" class="d-inline-block rounded-circle shadow-sm" style="width: 50px; height: 50px; object-fit: cover; border: 3px solid #fff; vertical-align: middle; margin: 0 4px; transform: rotate(-10deg);">
+              with premium handcrafted materials. Sophisticated silhouettes built for the modern professional. Seamless transitions between the boardroom and the streets powered by
+              <img src="shoe_2.png" alt="Cloud cushioning" class="d-inline-block rounded-circle shadow-sm" style="width: 50px; height: 50px; object-fit: cover; border: 3px solid #fff; vertical-align: middle; margin: 0 4px; transform: rotate(15deg);">
+              cloud-like responsive cushioning.
+            </h3>
+         </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

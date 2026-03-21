@@ -1,0 +1,169 @@
+/* Google Fonts for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner Utilities */
+#announcement-banner {
+    transition: opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+#close-banner i {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+#close-banner:hover i {
+    opacity: 1;
+}
+
+/* Navbar Utilities */
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #6c757d !important;
+}
+
+.dropdown-toggle-custom::after {
+    display: none; /* Hide default Bootstrap dropdown arrow */
+}
+
+/* Icons within links */
+.bi-person, .bi-cart2 {
+    transition: color 0.2s;
+}
+.bi-person:hover, .bi-cart2:hover {
+    color: #777;
+}
+
+/* Sign In Button */
+.btn-dark {
+    background-color: #000;
+    border: none;
+    font-weight: 500;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+.btn-dark:active {
+    transform: scale(0.98);
+}
+
+/* Hero Section */
+.hero-title {
+    font-size: clamp(3rem, 11vw, 9.5rem);
+    letter-spacing: -2px;
+    color: #0f0f0f;
+    line-height: 1;
+    margin-top: 40px;
+}
+
+/* Product Collection Section */
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1.25rem;
+    padding-bottom: 2rem;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    width: 100%;
+}
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.product-card {
+    min-width: 250px;
+    max-width: 320px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-family: monospace;
+    color: #555;
+}
+
+.card-category {
+    padding: 6px 14px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-size: 0.75rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 40px;
+    mix-blend-mode: darken; /* Ensures light grey block merges with our #f7f7f7 bg */
+}
+
+.btn-add-to-cart {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background: transparent;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #222;
+    transition: all 0.2s;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+/* Featured Section Marquee Animation */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee-content {
+    animation: marquee 15s linear infinite;
+    white-space: nowrap;
+}
+
+/* Featured Card Hover Effects */
+.featured-hover-card:hover .featured-hover-img {
+    transform: scale(1.04);
+}

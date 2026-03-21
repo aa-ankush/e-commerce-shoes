@@ -1,0 +1,56 @@
+[
+  {
+    "id": "W101",
+    "name": "Women's Comfort Knit Runner",
+    "category": "Running",
+    "price": 4999,
+    "description": "Breathable knit upper with responsive foam cushioning for all-day comfort. Perfect for running or casual wear.",
+    "colors": ["Pink", "Grey", "White"],
+    "sizes": ["UK 4", "UK 5", "UK 6", "UK 7"]
+  },
+  {
+    "id": "W102",
+    "name": "Classic Platform Sneakers",
+    "category": "Casual",
+    "price": 3599,
+    "description": "Elevate your look with a chunky platform sole and premium synthetic leather finish. A versatile staple.",
+    "colors": ["White", "Beige"],
+    "sizes": ["UK 4", "UK 5", "UK 6"]
+  },
+  {
+    "id": "W103",
+    "name": "Active Trail Hiking Shoes",
+    "category": "Outdoor",
+    "price": 6499,
+    "description": "Rugged outsole for maximum grip and a water-resistant upper for facing the elements in style.",
+    "colors": ["Olive", "Charcoal"],
+    "sizes": ["UK 5", "UK 6", "UK 7"]
+  },
+  {
+    "id": "W104",
+    "name": "Sleek Slip-on Loafers",
+    "category": "Formal",
+    "price": 2899,
+    "description": "Effortless slip-on design with a polished faux-leather exterior. Perfect for office environments.",
+    "colors": ["Black", "Tan"],
+    "sizes": ["UK 4", "UK 5", "UK 6"]
+  },
+  {
+    "id": "W105",
+    "name": "Aura Canvas High-Tops",
+    "category": "Casual",
+    "price": 3299,
+    "description": "Iconic high-top silhouette in durable canvas. Features a cushioned footbed for street-ready comfort.",
+    "colors": ["White", "Red", "Black"],
+    "sizes": ["UK 4", "UK 5", "UK 6", "UK 7"]
+  },
+  {
+    "id": "W106",
+    "name": "Flex Yoga Slip-ons",
+    "category": "Sport",
+    "price": 2499,
+    "description": "Ultra-lightweight and flexible design allowing natural foot movement. Easy to slip on post-workout.",
+    "colors": ["Mauve", "Navy"],
+    "sizes": ["UK 4", "UK 5", "UK 6"]
+  }
+]
