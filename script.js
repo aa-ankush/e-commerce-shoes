@@ -121,7 +121,7 @@ window.renderNavbar = function() {
     placeholder.innerHTML = `
     <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm mb-4">
       <div class="container-fluid px-3 px-lg-5">
-        <a class="navbar-brand fs-3 fw-medium" style="font-family: 'Times New Roman', Times, serif; letter-spacing: -0.5px;" href="index.html">Shoelpv</a>
+        <a class="navbar-brand fs-3 fw-medium" style="font-family: 'Times New Roman', Times, serif; letter-spacing: -0.5px;" href="index.html">SoleStyle</a>
         
         <div class="d-flex align-items-center gap-3 gap-lg-4 order-lg-2">
           <!-- Added Global Search Bar -->
@@ -179,7 +179,7 @@ window.renderFooter = function() {
         <div class="row g-4 mb-4">
           <!-- Column 1: Brand -->
           <div class="col-12 col-md-4 pe-md-4">
-             <a class="text-white text-decoration-none fs-3 fw-medium mb-3 d-inline-block" style="font-family: 'Times New Roman', Times, serif; letter-spacing: -0.5px;" href="index.html">Shoelpv</a>
+             <a class="text-white text-decoration-none fs-3 fw-medium mb-3 d-inline-block" style="font-family: 'Times New Roman', Times, serif; letter-spacing: -0.5px;" href="index.html">SoleStyle</a>
              <p class="text-white-50" style="font-size: 0.9rem; line-height: 1.6;">
                Elevating your daily stride with premium handcrafted materials and sophisticated silhouettes built for the modern professional.
              </p>
@@ -230,7 +230,7 @@ window.renderFooter = function() {
         
         <!-- Bottom Copyright -->
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 mt-4 border-top border-secondary">
-           <p class="mb-2 mb-md-0 text-white-50" style="font-size: 0.8rem;">&copy; 2024 Shoelpv. All rights reserved.</p>
+           <p class="mb-2 mb-md-0 text-white-50" style="font-size: 0.8rem;">&copy; 2024 SoleStyle. All rights reserved.</p>
            <div class="d-flex gap-2">
               <i class="bi bi-cc-visa text-white-50 fs-4"></i>
               <i class="bi bi-cc-mastercard text-white-50 fs-4"></i>
