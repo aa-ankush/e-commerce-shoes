@@ -167,3 +167,66 @@ body {
 .featured-hover-card:hover .featured-hover-img {
     transform: scale(1.04);
 }
+
+/* Universal Button Rounding (Matching Card Geometry) */
+.btn, .btn-add-to-cart {
+    border-radius: 14px !important;
+}
+
+/* FAQ Accordion Styling */
+.faq-accordion .faq-btn {
+    background-color: transparent;
+    color: #555;
+    transition: all 0.3s ease;
+    box-shadow: none !important;
+}
+
+/* Active (expanded) State */
+.faq-accordion .faq-btn:not(.collapsed) {
+    background-color: #222 !important;
+    color: #fff !important;
+    border-color: #222 !important;
+}
+
+.faq-accordion .faq-btn:not(.collapsed) .faq-number {
+    color: #ccc !important;
+}
+
+.faq-accordion .faq-btn:not(.collapsed) .faq-question {
+    color: #fff !important;
+}
+
+/* Hide Bootstrap default arrow */
+.faq-accordion .faq-btn::after {
+    background-image: none !important;
+    content: "\F282"; /* Bootstrap bi-chevron-down icon */
+    font-family: 'bootstrap-icons';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    font-size: 0.8rem;
+    transition: transform 0.2s ease-in-out, border-color 0.2s, background-color 0.2s, color 0.2s;
+    color: #555;
+}
+
+/* Active State Arrow */
+.faq-accordion .faq-btn:not(.collapsed)::after {
+    content: "\F285"; /* Bootstrap bi-chevron-right icon */
+    transform: rotate(0deg); /* Counteract Bootstrap's default 180deg rotation */
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+
+/* Footer Link Interactions */
+.footer-link, .footer-social {
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover, .footer-social:hover {
+    color: #fff !important;
+}

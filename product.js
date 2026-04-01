@@ -132,4 +132,38 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
     }
+
+    // --- You May Also Like (Related Products) ---
+    const relatedGrid = document.getElementById('related-grid');
+    if (relatedGrid && window.shoesData && window.shoesData.length > 0) {
+        // Exclude the currently viewed product
+        const otherShoes = window.shoesData.filter(s => s.id !== productId);
+        
+        // Randomly shuffle array and select robust sub-array of 4
+        const shuffled = otherShoes.sort(() => 0.5 - Math.random());
+        const selectedRelated = shuffled.slice(0, 4);
+        
+        let relatedHTML = '';
+        selectedRelated.forEach((shoe, idx) => {
+            let imgFile = idx % 2 === 0 ? 'shoe_1.png' : 'shoe_2.png';
+            relatedHTML += `
+                <div class="col-12 col-md-4 col-lg-3">
+                   <div class="product-card h-100 d-flex flex-column text-start" style="cursor: pointer; padding: 15px; border-radius: 16px; min-width: unset; max-width: unset;" onclick="window.location.href='product.html?id=${shoe.id}'">
+                      <div class="card-top mb-2" style="margin-bottom: 15px;">
+                        <span class="card-number" style="font-size: 0.65rem; width: 32px; height: 32px;">${shoe.id.replace('W','')}</span>
+                        <span class="card-category text-truncate" style="font-size: 0.65rem; padding: 4px 10px; max-width: 140px;">${shoe.category}</span>
+                      </div>
+                      <img src="${imgFile}" alt="${shoe.name}" class="product-image mx-auto my-3" style="max-height: 180px; width: 100%; object-fit: contain; margin-bottom: 25px !important;" draggable="false">
+                      <div class="mt-auto">
+                         <h6 class="mb-2 text-dark fs-6 text-truncate" style="font-weight: 500;">${shoe.name}</h6>
+                         <div class="product-price fw-bold mb-3 fs-6" style="color: #444;">₹${shoe.price.toLocaleString('en-IN')}</div>
+                         <button class="btn-add-to-cart py-2 w-100" style="font-size: 0.8rem; border-radius: 4px;" onclick="event.stopPropagation(); window.handleAddToCart(this, '${shoe.id}');">Add To Cart</button>
+                      </div>
+                   </div>
+                </div>
+            `;
+        });
+        relatedGrid.innerHTML = relatedHTML;
+    }
+
 });

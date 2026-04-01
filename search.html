@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results - Shoelpv</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+    <style>
+      .search-highlight {
+         background-color: #fffb8f;
+         padding: 0 4px;
+         border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Announcement Banner -->
+    <div id="announcement-banner" class="bg-black text-white py-2 position-relative">
+      <div class="container d-flex justify-content-center align-items-center text-sm" style="font-size: 0.85rem;">
+        <span>Subscribe to our Newsletter For Latest Collections <i class="bi bi-arrow-up-right ms-1"></i></span>
+      </div>
+      <button id="close-banner" class="btn text-white position-absolute end-0 top-50 translate-middle-y me-2 p-0 border-0" aria-label="Close">
+        <i class="bi bi-x fs-5"></i>
+      </button>
+    </div>
+
+    <!-- Dynamic Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <main class="container-fluid px-2 px-md-4 px-lg-5 py-5 mt-4">
+      <h1 class="display-5 fw-bold mb-2 text-center" style="letter-spacing: -1px;">Search Results</h1>
+      <p class="text-center text-muted mb-5" id="search-query-display">Displaying results for '...'</p>
+      
+      <div class="row g-4" id="search-grid">
+         <!-- Dynamic category items injected here via script.js -->
+      </div>
+      
+      <div id="no-results-msg" class="text-center py-5 d-none">
+         <i class="bi bi-search display-1 text-muted opacity-50 mb-3"></i>
+         <h4 class="fw-bold">No exact matches found</h4>
+         <p class="text-muted">Try adjusting your search terms or exploring our collections.</p>
+         <div class="mt-4">
+            <a href="index.html" class="btn btn-dark rounded-pill px-4 me-2">Go Home</a>
+            <a href="womens.html" class="btn btn-outline-dark rounded-pill px-4">Women's Collection</a>
+         </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
